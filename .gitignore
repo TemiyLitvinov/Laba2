@@ -1,0 +1,5 @@
+.venv
+.idea/
+__pycache__/
+.DS_store
+.pre-commit-config.yaml
