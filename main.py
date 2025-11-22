@@ -13,7 +13,7 @@ def main():
             if is_valid_password(password):
                 print("Пароль является надёжным")
             else:
-                print("Пароль не соответствует")
+                print("Пароль не соответствует критериям надёжности")
 
         elif choice == "2":
             filename = "example_passwords.txt"
