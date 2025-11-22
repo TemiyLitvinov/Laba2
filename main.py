@@ -16,7 +16,7 @@ def main():
                 print("Пароль не соответствует критериям надёжности")
 
         elif choice == "2":
-            filename = "example_passwords.txt"
+            filename = input("Введите путь к файлу или его имя: ")
             try:
                 with open(filename, "r", encoding="utf-8", errors="ignore") as file:
                     lines = file.read().splitlines()
