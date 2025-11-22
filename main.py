@@ -46,7 +46,6 @@ def main():
             # Исключение для случая, если файл окажется не найден
             except FileNotFoundError:
                 print(f"Ошибка: файл '{filename}' не найден!")
-                return ""
 
         # Выход из бесконечного цикла
         elif choice == "3":
