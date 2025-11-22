@@ -31,7 +31,7 @@ def main():
                     lines = file.read().splitlines()
 
                 # Список найденных надёжных паролей
-                found_good_passwords = [line for line in lines if password_regex.match(line)]
+                found_good_passwords = [line for line in lines if password_regex.fullmatch(line)]
 
                 if found_good_passwords:
                     print('\nНайденные надежные пароли:')
