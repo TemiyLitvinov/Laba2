@@ -16,7 +16,7 @@ def main():
                 print("Пароль не соответствует")
 
         elif choice == "2":
-            filename = input("Введите путь к файлу: ")
+            filename = "example_passwords.txt"
             try:
                 with open(filename, "r", encoding="utf-8", errors="ignore") as file:
                     lines = file.read().splitlines()
