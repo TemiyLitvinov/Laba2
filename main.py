@@ -1,4 +1,4 @@
-from check_password import is_valid_password, password_regex
+from check_password import is_valid_password
 
 # Главная функция программы
 def main():
@@ -31,7 +31,7 @@ def main():
                     lines = file.read().splitlines()
 
                 # Список найденных надёжных паролей
-                found_good_passwords = [line for line in lines if password_regex.fullmatch(line)]
+                found_good_passwords = [line for line in lines if is_valid_password(line)]
 
                 if found_good_passwords:
                     print('\nНайденные надежные пароли:')
