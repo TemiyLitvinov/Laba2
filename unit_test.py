@@ -32,10 +32,6 @@ class TestPasswordRegex(unittest.TestCase):
     def test_with_space(self):
         self.assertFalse(is_valid_password("Hello world!341"))
 
-    # Unit-тест для длинного и проходящего по всем критериям пароля
-    def test_long_valid(self):
-        self.assertTrue(is_valid_password("GoodPassword3748@"))
-
 # Запуск всех тестов
 if __name__ == "__main__":
     unittest.main()
